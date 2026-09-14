@@ -23,5 +23,9 @@ vault will grow only from material you choose to add.
 - `raw/assets/` — local images and attachments
 - `wiki/` — maintained summaries, concepts, comparisons, and synthesis
 - `templates/` — optional note templates
+- `.codex/skills/ingest-learning-source/` — reusable source-ingestion workflow
 - `AGENTS.md` — operating rules for the LLM maintainer
 
+When you explicitly send Codex a paper or article to remember, the bundled
+`ingest-learning-source` skill stores the raw source safely, creates a structured
+brief and summary, extracts key ideas, and updates the wiki index and log.

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ingest Learning Source"
+  short_description: "Add papers and articles to a learning wiki"
+  default_prompt: "Use $ingest-learning-source to ingest this paper or article into my learning wiki."
