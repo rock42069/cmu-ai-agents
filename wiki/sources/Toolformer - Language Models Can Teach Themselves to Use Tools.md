@@ -103,8 +103,8 @@ needed.
 
 ## Connections
 
-- [[concepts/Tool-using language model agents|Tool-using language model agents]]
-- [[sources/ReAct - Synergizing Reasoning and Acting in Language Models|ReAct]]
+- [[wiki/concepts/Tool-using language model agents|Tool-using language model agents]]
+- [[wiki/sources/ReAct - Synergizing Reasoning and Acting in Language Models|ReAct]]
   focuses on interleaved reasoning and action at inference time; Toolformer
   focuses on learning the tool-call policy during training.
 - ReAct directly explores iterative search and multi-step action, two abilities

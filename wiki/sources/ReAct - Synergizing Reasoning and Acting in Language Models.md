@@ -105,8 +105,8 @@ reasoning is faithful to all internal computation or that the system is safe.
 
 ## Connections
 
-- [[concepts/Tool-using language model agents|Tool-using language model agents]]
-- [[sources/Toolformer - Language Models Can Teach Themselves to Use Tools|Toolformer]]
+- [[wiki/concepts/Tool-using language model agents|Tool-using language model agents]]
+- [[wiki/sources/Toolformer - Language Models Can Teach Themselves to Use Tools|Toolformer]]
   learns a tool-call policy through self-supervised fine-tuning; ReAct elicits a
   thought-action-observation policy from demonstrations at inference time.
 - ReAct's iterative observations and query reformulation cover interactive and
