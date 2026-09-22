@@ -31,3 +31,9 @@ Append-only history of ingests, filed queries, and maintenance passes.
 - Added the unchanged CC BY-SA 4.0 arXiv PDF and attribution record under `raw/`.
 - Created `wiki/sources/XGrammar - Flexible and Efficient Structured Generation Engine for Large Language Models.md` and `wiki/concepts/Structured generation for agents.md`.
 - Connected constrained generation to agent tool calls and updated `wiki/index.md`.
+
+## [2026-09-23] ingest | YaRN: Efficient Context Window Extension of Large Language Models
+
+- Added the unchanged CC BY 4.0 arXiv v3 PDF at `raw/2309.00071-yarn.pdf` with `raw/2309.00071-yarn.LICENSE.md` for attribution.
+- Created `wiki/sources/YaRN - Efficient Context Window Extension of Large Language Models.md` with a source-grounded account of the method, evidence, and limitations.
+- Created `wiki/concepts/Long-context language models.md` to distinguish nominal context capacity from effective task capability; updated `wiki/index.md`.
