@@ -38,8 +38,20 @@ benefit from placing all available material in the prompt.
 Positional extension and efficient attention are separate problems. YaRN adds
 no material overhead relative to another RoPE configuration at the same length,
 but it does not change ordinary attention's growth in compute and KV-cache
-memory. A usable long-context system therefore needs both a model that remains
-capable at distant positions and an inference stack that can afford them.
+memory.
+
+[[wiki/sources/Ring Attention with Blockwise Transformers for Near-Infinite Context|Ring Attention]]
+addresses the complementary systems constraint. It shards a sequence across
+devices and circulates key-value blocks while exact blockwise attention runs,
+making per-device activation memory depend on local block size rather than the
+global sequence length. If computation hides communication, supported sequence
+length scales roughly with device count.
+
+This makes dense long-context attention fit; it does not make all pairwise
+attention free. The total arithmetic still grows with sequence length for a
+fixed dataset, and the hardware requirement grows with the desired capacity. A
+usable long-context system therefore needs both a model that remains capable at
+distant positions and an inference stack that can afford them.
 
 For an agent, long context is likewise not identical to memory. Context is a
 bounded working set supplied to one inference; durable memory additionally
@@ -55,3 +67,4 @@ inference cost.
 ## Sources
 
 - [[wiki/sources/YaRN - Efficient Context Window Extension of Large Language Models|YaRN: Efficient Context Window Extension of Large Language Models]]
+- [[wiki/sources/Ring Attention with Blockwise Transformers for Near-Infinite Context|Ring Attention with Blockwise Transformers for Near-Infinite Context]]

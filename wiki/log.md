@@ -37,3 +37,9 @@ Append-only history of ingests, filed queries, and maintenance passes.
 - Added the unchanged CC BY 4.0 arXiv v3 PDF at `raw/2309.00071-yarn.pdf` with `raw/2309.00071-yarn.LICENSE.md` for attribution.
 - Created `wiki/sources/YaRN - Efficient Context Window Extension of Large Language Models.md` with a source-grounded account of the method, evidence, and limitations.
 - Created `wiki/concepts/Long-context language models.md` to distinguish nominal context capacity from effective task capability; updated `wiki/index.md`.
+
+## [2026-09-23] ingest | Ring Attention with Blockwise Transformers for Near-Infinite Context
+
+- Retained the unchanged arXiv PDF locally at `raw/2310.01889-ring-attention.pdf` and added `raw/2310.01889-ring-attention.md` as the public source record; the PDF is Git-ignored because its default arXiv license does not grant general redistribution rights.
+- Created `wiki/sources/Ring Attention with Blockwise Transformers for Near-Infinite Context.md` with a source-grounded account of the algorithm, systems evidence, task results, and limitations.
+- Expanded `wiki/concepts/Long-context language models.md` to distinguish positional extension from distributed exact-attention capacity; updated `wiki/index.md`.
