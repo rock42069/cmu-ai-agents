@@ -57,6 +57,12 @@ For an agent, long context is likewise not identical to memory. Context is a
 bounded working set supplied to one inference; durable memory additionally
 requires deciding what to retain, retrieve, update, and discard.
 
+Long prompts also impose prefill latency even when they fit. If substantial
+segments recur across requests,
+[[wiki/concepts/Reusable prompt-state caching|reusable prompt-state caching]]
+can skip some repeated computation. This is a serving optimization, not an
+increase in context capacity or evidence that the model uses the context well.
+
 ## Durable takeaway
 
 Treat a context-window number as a capacity claim, not a capability guarantee.
@@ -68,3 +74,4 @@ inference cost.
 
 - [[wiki/sources/YaRN - Efficient Context Window Extension of Large Language Models|YaRN: Efficient Context Window Extension of Large Language Models]]
 - [[wiki/sources/Ring Attention with Blockwise Transformers for Near-Infinite Context|Ring Attention with Blockwise Transformers for Near-Infinite Context]]
+- [[wiki/sources/Prompt Cache - Modular Attention Reuse for Low-Latency Inference|Prompt Cache: Modular Attention Reuse for Low-Latency Inference]]

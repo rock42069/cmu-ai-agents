@@ -43,3 +43,9 @@ Append-only history of ingests, filed queries, and maintenance passes.
 - Retained the unchanged arXiv PDF locally at `raw/2310.01889-ring-attention.pdf` and added `raw/2310.01889-ring-attention.md` as the public source record; the PDF is Git-ignored because its default arXiv license does not grant general redistribution rights.
 - Created `wiki/sources/Ring Attention with Blockwise Transformers for Near-Infinite Context.md` with a source-grounded account of the algorithm, systems evidence, task results, and limitations.
 - Expanded `wiki/concepts/Long-context language models.md` to distinguish positional extension from distributed exact-attention capacity; updated `wiki/index.md`.
+
+## [2026-09-23] ingest | Prompt Cache: Modular Attention Reuse for Low-Latency Inference
+
+- Retained the unchanged arXiv PDF locally at `raw/2311.04934-prompt-cache.pdf` and added `raw/2311.04934-prompt-cache.md` as the public source record; the PDF is Git-ignored because its default arXiv license does not grant general redistribution rights.
+- Created `wiki/sources/Prompt Cache - Modular Attention Reuse for Low-Latency Inference.md` with a source-grounded account of modular KV reuse, positional schemas, evidence, and approximation boundaries.
+- Created `wiki/concepts/Reusable prompt-state caching.md` and connected it to the existing long-context and tool-using-agent syntheses; updated `wiki/index.md`.

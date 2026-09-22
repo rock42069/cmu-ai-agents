@@ -68,6 +68,16 @@ a concrete learning signal for need, selection, and arguments, but its
 future-token-loss criterion does not directly optimize truth, task completion,
 cost, or safety.
 
+## Reuse in the agent runtime
+
+Agent turns often repeat system instructions, tool descriptions, structured
+output rules, demonstrations, and stable environment documentation.
+[[wiki/concepts/Reusable prompt-state caching|Reusable prompt-state caching]]
+can reduce the prefill cost of this stable material across turns and users. It
+is an execution optimization rather than a better tool policy: cache boundaries
+must preserve the attention relationships the policy depends on, and cached
+states need model-aware invalidation and tenant-aware access control.
+
 ## Durable takeaway
 
 “Give the model tools” hides most of the engineering and research problem. A
@@ -82,3 +92,4 @@ failure, and terminates safely.
 - [[wiki/sources/What Are Tools Anyway - A Survey from the Language Model Perspective|What Are Tools Anyway? A Survey from the Language Model Perspective]]
 - [[wiki/sources/Executable Code Actions Elicit Better LLM Agents|Executable Code Actions Elicit Better LLM Agents]]
 - [[wiki/sources/XGrammar - Flexible and Efficient Structured Generation Engine for Large Language Models|XGrammar: Flexible and Efficient Structured Generation Engine for Large Language Models]]
+- [[wiki/sources/Prompt Cache - Modular Attention Reuse for Low-Latency Inference|Prompt Cache: Modular Attention Reuse for Low-Latency Inference]]

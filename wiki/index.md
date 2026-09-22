@@ -9,9 +9,11 @@
 - [[wiki/sources/XGrammar - Flexible and Efficient Structured Generation Engine for Large Language Models|XGrammar: Flexible and Efficient Structured Generation Engine for Large Language Models]] — Makes grammar-constrained generation fast through cached token masks, context expansion, persistent stacks, and inference-engine overlap.
 - [[wiki/sources/YaRN - Efficient Context Window Extension of Large Language Models|YaRN: Efficient Context Window Extension of Large Language Models]] — Extends RoPE context windows by selectively interpolating positional frequencies and rescaling attention, with efficient fine-tuning and limited train-short/test-long extrapolation.
 - [[wiki/sources/Ring Attention with Blockwise Transformers for Near-Infinite Context|Ring Attention with Blockwise Transformers for Near-Infinite Context]] — Distributes exact blockwise attention over a device ring so per-device memory depends on local blocks and context capacity scales with hardware.
+- [[wiki/sources/Prompt Cache - Modular Attention Reuse for Low-Latency Inference|Prompt Cache: Modular Attention Reuse for Low-Latency Inference]] — Reuses position-aware KV states for recurring prompt modules across requests to reduce prefill and time-to-first-token latency.
 
 ## Concepts
 
 - [[wiki/concepts/Tool-using language model agents|Tool-using language model agents]] — How ReAct and Toolformer locate tool use at different stages of the agent pipeline.
 - [[wiki/concepts/Structured generation for agents|Structured generation for agents]] — Why agent outputs need machine-checkable structure and how constrained decoding guarantees syntax efficiently.
 - [[wiki/concepts/Long-context language models|Long-context language models]] — Separates nominal context capacity, positional adaptation, distributed execution, retrieval, downstream use, and total inference cost.
+- [[wiki/concepts/Reusable prompt-state caching|Reusable prompt-state caching]] — How recurring prompt components become versioned inference artifacts, and why reuse boundaries affect correctness, latency, memory, and isolation.
