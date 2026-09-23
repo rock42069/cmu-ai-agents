@@ -63,6 +63,13 @@ segments recur across requests,
 can skip some repeated computation. This is a serving optimization, not an
 increase in context capacity or evidence that the model uses the context well.
 
+Two other strategies avoid placing all historical material in the window.
+[[wiki/concepts/Agent memory management|Agent memory management]] retrieves a
+small working set from persistent storage over time, while
+[[wiki/concepts/Prompt compression for long context|prompt compression]] removes
+lower-priority material before inference. Both depend on selection quality and
+can lose information that a physically longer context would retain.
+
 ## Durable takeaway
 
 Treat a context-window number as a capacity claim, not a capability guarantee.
@@ -75,3 +82,5 @@ inference cost.
 - [[wiki/sources/YaRN - Efficient Context Window Extension of Large Language Models|YaRN: Efficient Context Window Extension of Large Language Models]]
 - [[wiki/sources/Ring Attention with Blockwise Transformers for Near-Infinite Context|Ring Attention with Blockwise Transformers for Near-Infinite Context]]
 - [[wiki/sources/Prompt Cache - Modular Attention Reuse for Low-Latency Inference|Prompt Cache: Modular Attention Reuse for Low-Latency Inference]]
+- [[wiki/sources/MemGPT - Towards LLMs as Operating Systems|MemGPT: Towards LLMs as Operating Systems]]
+- [[wiki/sources/LongLLMLingua - Accelerating and Enhancing LLMs in Long Context Scenarios via Prompt Compression|LongLLMLingua: Accelerating and Enhancing LLMs in Long Context Scenarios via Prompt Compression]]

@@ -63,6 +63,12 @@ their dependencies, measure their reuse, and invalidate them safely. Optimize
 module boundaries for both semantic interaction and systems reuse rather than
 assuming every repeated string is independently cacheable.
 
+Question-aware [[wiki/concepts/Prompt compression for long context|prompt compression]]
+creates the opposite trade-off: recomputing a query-specific shorter prompt can
+improve relevance, but sacrifices reuse of one cached representation across
+different questions.
+
 ## Sources
 
 - [[wiki/sources/Prompt Cache - Modular Attention Reuse for Low-Latency Inference|Prompt Cache: Modular Attention Reuse for Low-Latency Inference]]
+- [[wiki/sources/LongLLMLingua - Accelerating and Enhancing LLMs in Long Context Scenarios via Prompt Compression|LongLLMLingua: Accelerating and Enhancing LLMs in Long Context Scenarios via Prompt Compression]]

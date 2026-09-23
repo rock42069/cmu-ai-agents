@@ -78,6 +78,11 @@ is an execution optimization rather than a better tool policy: cache boundaries
 must preserve the attention relationships the policy depends on, and cached
 states need model-aware invalidation and tenant-aware access control.
 
+[[wiki/sources/MemGPT - Towards LLMs as Operating Systems|MemGPT]] treats memory
+itself as a tool surface: the agent writes durable facts, searches full history,
+paginates results, and edits its working context. This makes memory quality part
+of the tool policy rather than a passive consequence of a larger prompt.
+
 ## Durable takeaway
 
 “Give the model tools” hides most of the engineering and research problem. A
@@ -93,3 +98,4 @@ failure, and terminates safely.
 - [[wiki/sources/Executable Code Actions Elicit Better LLM Agents|Executable Code Actions Elicit Better LLM Agents]]
 - [[wiki/sources/XGrammar - Flexible and Efficient Structured Generation Engine for Large Language Models|XGrammar: Flexible and Efficient Structured Generation Engine for Large Language Models]]
 - [[wiki/sources/Prompt Cache - Modular Attention Reuse for Low-Latency Inference|Prompt Cache: Modular Attention Reuse for Low-Latency Inference]]
+- [[wiki/sources/MemGPT - Towards LLMs as Operating Systems|MemGPT: Towards LLMs as Operating Systems]]

@@ -49,3 +49,15 @@ Append-only history of ingests, filed queries, and maintenance passes.
 - Retained the unchanged arXiv PDF locally at `raw/2311.04934-prompt-cache.pdf` and added `raw/2311.04934-prompt-cache.md` as the public source record; the PDF is Git-ignored because its default arXiv license does not grant general redistribution rights.
 - Created `wiki/sources/Prompt Cache - Modular Attention Reuse for Low-Latency Inference.md` with a source-grounded account of modular KV reuse, positional schemas, evidence, and approximation boundaries.
 - Created `wiki/concepts/Reusable prompt-state caching.md` and connected it to the existing long-context and tool-using-agent syntheses; updated `wiki/index.md`.
+
+## [2026-09-23] ingest | MemGPT: Towards LLMs as Operating Systems
+
+- Added the unchanged CC BY 4.0 arXiv v2 PDF and attribution record under `raw/`.
+- Created `wiki/sources/MemGPT - Towards LLMs as Operating Systems.md` and `wiki/concepts/Agent memory management.md`.
+- Integrated memory-as-tool policy into the long-context and tool-using-agent syntheses; updated `wiki/index.md`.
+
+## [2026-09-23] ingest | LongLLMLingua: Accelerating and Enhancing LLMs in Long Context Scenarios via Prompt Compression
+
+- Added the unchanged CC BY 4.0 ACL 2024 PDF and attribution record under `raw/`.
+- Created `wiki/sources/LongLLMLingua - Accelerating and Enhancing LLMs in Long Context Scenarios via Prompt Compression.md` and `wiki/concepts/Prompt compression for long context.md`.
+- Connected prompt compression to agent memory, long-context capability, and prompt-state caching; updated `wiki/index.md`.
